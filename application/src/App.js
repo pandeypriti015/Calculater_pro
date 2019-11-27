@@ -18,6 +18,7 @@ class Calculate extends React.Component {
     this.Eight=this.Eight.bind(this);
     this.Nine=this.Nine.bind(this);
     this.Zero=this.Zero.bind(this);
+    this.takequantity=this.takequantity.bind(this);
   }
 
   One() {
@@ -79,14 +80,18 @@ Zero() {
     value:this.state.value+"0"
 });
 }
-
-
-
-
+takequantity(event){
+  let value = event.target.value;
+    if(value){
+      this.setState({
+        value:parseInt(value)
+    });
+  }
+}
   render() {
     return (
       <div className="name">
-        <input className="input" type="text" value={this.state.value}/>
+        <input className="input" type="text" onChange={this.takequantity} value={this.state.value}/>
         <div className="name">
           <button onClick={this.Nine} className = "button">9</button>
           <button onClick={this.Eight} className = "button">8</button>
