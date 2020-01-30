@@ -1,4 +1,4 @@
-# Calculater_pro
+# Calculater
 
 Created a repository called Calculator_pro.
 
