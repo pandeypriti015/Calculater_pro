@@ -1,6 +1,6 @@
 # Calculater
 
-Created a repository called Calculator_pro.
+Created a repository called Calculator
 
 this is done using reactjs and basic calculations are handled such as addition, subtraction, multiplication, division.
 
